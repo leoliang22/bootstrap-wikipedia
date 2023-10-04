@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
 <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
@@ -50,8 +51,9 @@
           <button class="btn btn-outline-secondary">Search</button>
         </div>
         <div class="col-md-auto mt-3">
-          <a href="#">Create account</a>
-          <a href="#">Log in</a>
+          <ul class="nav justify-content-end">
+          <li><a href="#">Create account</a></li>
+            <li class="px-2"><a href="#">Log in</a></li>
           <div class = "nav-item dropdown">
             <div class="dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               ...
@@ -62,6 +64,8 @@
               <li><a href="#">Talk</a></li>
             </ul>
           </div>
+            </ul>
+          </div>
         </div>
     </div>
   </div>
@@ -69,7 +73,107 @@
 </nav>
 
 <div class="container">
-  
+  <nav class="navbar">
+    <ul class="nav justify-content-start">
+      <li><a href="#" class="px-3">Main Page</a></li>
+      <li><a href="#" class="px-3">Talk</a></li>
+    </ul>
+
+    <ul class="nav justify-content-end">
+      <li><a href="#" class="px-3">Read</a></li>
+      <li><a href="#" class="px-3">View source</a></li>
+      <li><a href="#" class="px-3">View history</a></li>
+      <div class = "nav-item dropdown">
+        <div class="dropdown-toggle" id="toolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Tools
+        </div>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>Placeholder</li>
+        </ul>
+      </div>
+    </ul>
+  </nav>
+  <hr>
+</div>
+
+<div class="container border" id="top">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-8 text-center py-3">
+      <h3>
+   Welcome to <a href="#">Wikipedia</a><br></h3>
+    the <a href="#">free encyclopedia</a> <a href="#">that anyone can edit</a>. <br>
+    <a href="#">6,723,601</a> articles in <a href="#">English</a>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row alight-items-center justify-content-center">
+    <div class="col justify-content-left border" id="featured-article">
+      <h2 class="border px-2 py-1">
+        <strong>From today's featured article</strong>
+      </h2>
+      <figure class="figure" style="float: left">
+      <img src="960px-NBC_Tower_Chicago_2019-1486.jpg" height="175" alt="NBC tower" class="img-responsive px-2">
+        <figcaption class="figure-caption"> NBC Tower, Chicago</figcaption>
+      </figure>
+      <p class="paragraph">
+        <strong><a href="#">WSNS-TV</a></strong> (channel 44) is a television station in <a href="#">Chicago</a> broadcasting the Spanish-language <a href="#">Telemundo</a> network. It is <a href="#">owned and operated</a> by the network and shares its studios in the NBC Tower (pictured), and its transmitter on the <a href="#">Willis Tower</a>, with <a href="#">WMAQ-TV</a>. WSNS-TV was built as an English-language <a href="#">independent station </a> by the local Essaness Theatres Corporation in 1970; it broadcast local sports, most notably the <a href="#">Chicago White Sox</a>, among other local programs. In 1980, the station began broadcasting <a href="#">ON TV</a>, a pay <a href="#">subscription television </a> service with 120,000 local subscribers at its height in 1982; the station nearly had its <a href="#">broadcast license</a> revoked by the <a href="#">Federal Communications Commission </a> for its lack of local programming during this time. After ON TV folded in 1985, channel 44 became the city's first full-time Spanish-language television station, including local newscasts. Telemundo bought WSNS in 1996; <a href="#">NBC</a> bought Telemundo in 2002, leading to the merger of WMAQ-TV and WSNS-TV. <strong><a href="#">(Full article...)</a></strong>
+      </p>
+      <div class="text-end py-2">
+        <ul>
+          <li class="list-unstyled" id="inline">Recently Featured:</li>
+          <li id="inline"><a href="#">1919–20 Gillingham F.C. season</a><i class="bi bi-dot"></i></li>
+          <li id="inline"><a href="#">Baljuna Covenant</a><i class="bi bi-dot"></i></li>
+          <li id="inline"><a href="#">Medieval cuisine</a></li>
+        </ul>
+      </div>
+      <div class="text-end">
+        <ul>
+          <strong>
+          <li class="list-unstyled" id="inline"><a href="#">Archive</a> <i class="bi bi-dot"></i></li>
+          <li id="inline"><a href="#">By email</a><i class="bi bi-dot"></i></li>
+          <li id="inline"><a href="#">More featured articles</a><i class="bi bi-dot"></i></li>
+          <li id="inline"><a href="#">About</a></li>
+          </strong>
+        </ul>
+      </div>
+    </div>
+    <div class="col border" id="inTheNews">
+      <h4 class="border px-2 py-1">
+        <strong>In the News</strong>
+      </h4>
+      <figure class="figure" style="float: right">
+        <img src="Drew_Weissman_and_Katalin_Karikó_Life_Science_Medalists.jpg.webp" width="200" alt="Drew Weissman and Katalin Kariko" class="img-fluid">
+        <figcaption class="figure-caption"> Drew Weissman and Katalin Karikó</figcaption>
+      </figure>
+      <ul>
+        <li><strong><a href="#">Katalin Karikó</a></strong> and <strong><a href="#">Drew Weissman </a></strong> (both pictured) are awarded the <a href="#">Nobel Prize in Medicine </a> for discoveries that led to the <a href="#">mRNA vaccines </a> against <a href="#">COVID-19</a>.</li>
+        <li>In <a href="#">Australian rules football</a>, <a href="#">Collingwood</a> defeat the <a href="#">Brisbane Lions</a> to win <strong><a href="#">the AFL Grand Final</a></strong>.</li>
+        <li><strong><a href="#">A suicide bombing</strong></a> kills more than 50 people in <a href="#">Mastung</a>, Pakistan.</li>
+        <li><strong><a href="#">Waheeda Rehman</strong></a> receives the <a href="#">Dadasaheb Phalke Award</a> for her work in <a href="#">Hindi cinema</a>.</li>
+      </ul>
+      <ul id="inline" class="justify-content-left">
+        <li class="list-unstyle" id="start"><strong><a href="#">Ongoing:</a></strong></li>
+        <li class="list-unstyled" id="inline"><a href="#">Nigerien crisis</a><i class="bi bi-dot"></i></li>
+        <li id="inline"><a href="#">Russian invasion of Ukraine (timeline)</a><i class="bi bi-dot"></i></li>
+        <li id="inline"><a href="#">Sudan War</a></i></li>
+      </ul>
+      <br>
+      <ul id="inline" class="justify-content-left">
+        <li class="list-unstyle" id="start"><strong><a href="#">Recent deaths:</a></strong></li>
+        <li class="list-unstyled" id="inline"><a href="#">Pat Arrowsmith</a><i class="bi bi-dot"></i></li>
+        <li id="inline"><a href="#">Francis Lee</a><i class="bi bi-dot"></i></li>
+        <li id="inline"><a href="#">Tim Wakefield</a><i class="bi bi-dot"></i></li>
+        <li id="inline"><a href="#">Eugino Calabi</a><i class="bi bi-dot"></i></li>
+        <li id="inline"><a href="#">Ganira Pashayeva</a><i class="bi bi-dot"></i></li>
+        <li id="inline"><a href="#">Nic Kerdiles</a></li>
+      </ul>
+      <p class="text-end">
+        <a href="#"><strong>Nominate an article</strong></a>
+      </p>
+    </div>
+  </div>
 </div>
 
 </body>
